@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.muhamadarief.pasarmalamsmd.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/img_pasar"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="centerCrop"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_deskripsi"
+                    android:text="deskripsi"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_event_black_24dp"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_hari"
+                        android:text="hari"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_schedule_black_36dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_jam"
+                        android:text="jam"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnMaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:text="Tampilkan pada peta"
+                android:textColor="@android:color/white"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
